@@ -29,7 +29,7 @@ const creatImages = images.map(el => {
   // imageItem.alt = el.alt;
   // imageItem.width = 500;
   // liItem.append(imageItem);
-  // return liItem;
+  // return liItem
 
 })
 galery.insertAdjacentHTML('beforeend', creatImages.join(' '))
