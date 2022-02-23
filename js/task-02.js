@@ -16,5 +16,4 @@ const createIngredients = ingredients.map(el => {
   return ingridientsItem;
 })
 ingredientsEL.append(...createIngredients);
-
 // console.log(ingredientsEL)
