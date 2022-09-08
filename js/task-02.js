@@ -7,13 +7,11 @@ const ingredients = [
   'Condiments',
 ];
 
-const ingredientsEL = document.querySelector('ul#ingredients');
-
-const createIngredients = ingredients.map(el => {
-  const ingridientsItem = document.createElement('li');
-  ingridientsItem.classList.add('item');
-  ingridientsItem.textContent = el;
-  return ingridientsItem;
+const ulIngridients = document.querySelector('ul#ingredients')
+const createIngridients = ingredients.map(el => {
+  const ingridient = document.createElement("li")
+  ingridient.classList.add('item')
+  ingridient.textContent = el
+  return ingridient
 })
-ingredientsEL.append(...createIngredients);
-// console.log(ingredientsEL)
+ulIngridients.append(...createIngridients);
