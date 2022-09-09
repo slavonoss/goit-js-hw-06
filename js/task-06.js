@@ -11,6 +11,6 @@ function onInputChanger(){
     }
     else {
         inputEl.classList.replace('invalid', 'valid' )
-     
+        
     }
 }
