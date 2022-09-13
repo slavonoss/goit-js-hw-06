@@ -1,9 +1,8 @@
-const input = document.querySelector("#font-size-control")
-console.dir(input)
-const outputText = document.querySelector('span#text')
+const input = document.querySelector('#font-size-control');
+console.dir(input);
+const outputText = document.querySelector('span#text');
 
-input.addEventListener("click", onChangeRange)
+input.addEventListener('click', onChangeRange);
 function onChangeRange(event) {
-    
-   outputText.style.fontSize = `${input.value}px`
+  outputText.style.fontSize = `${input.value}px`;
 }
