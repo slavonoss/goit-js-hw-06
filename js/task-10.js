@@ -21,6 +21,7 @@ function onCreatBtnclick() {
     container.style.width = 30 + 10 * i + 'px';
     container.style.height = 30 + 10 * i + 'px';
     container.style.background = getRandomHexColor();
+    container.style.zIndex = 99 - i; //не работает
     if (counter.value == 1) {
       boxes.appendChild(container);
       break;
@@ -30,3 +31,7 @@ function onCreatBtnclick() {
   }
 }
 // (boxes.children[boxes.children.length - 1]).appendChild(container);
+destroytBtn.addEventListener('click', onDestroyBtnClick);
+function onDestroyBtnClick() {
+  boxes.innerHTML = '';
+}
