@@ -4,9 +4,10 @@ const validBorder = document.querySelector('validation-input.valid');
 
 inputEl.addEventListener('blur', onInputChanger);
 function onInputChanger() {
-  if (inputEl.value.length < inputEl.dataset.length) {
-    inputEl.classList.add('invalid');
+  console.dir(inputEl.dataset.length);
+  if (inputEl.value.length == inputEl.dataset.length) {
+    inputEl.classList.add('valid');
   } else {
-    inputEl.classList.replace('invalid', 'valid');
+    inputEl.classList.add('invalid');
   }
 }
