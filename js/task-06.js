@@ -4,9 +4,8 @@ const validBorder = document.querySelector('validation-input.valid');
 
 inputEl.addEventListener('blur', onInputChanger);
 function onInputChanger() {
+  inputEl.classList.add('invalid');
   if (inputEl.value.length == inputEl.dataset.length) {
-    inputEl.classList.add('valid');
-  } else {
-    inputEl.classList.add('invalid');
+    inputEl.classList.replace('invalid', 'valid');
   }
 }
